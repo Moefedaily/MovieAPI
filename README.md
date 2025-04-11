@@ -13,9 +13,11 @@ Check out the live application here: [Movie Explorer Demo](https://moefedaily.gi
 The application is responsive and works on both desktop and mobile devices. Screenshots are available for:
 
 - Desktop view
+
   ![](./assets/screenshots/MovieAPI-Desktop.jpg)
 
 - Mobile view
+
   ![](./assets/screenshots/MovieAPI-mobile.jpg)
 
 ## Features
