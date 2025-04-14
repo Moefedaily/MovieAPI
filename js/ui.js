@@ -3,19 +3,13 @@ function createMovieCard(movie) {
   card.classList.add("movie-card");
   card.setAttribute("data-id", movie.id);
 
-  let posterUrl = "https://via.placeholder.com/300x450?text=No+Image+Available";
-  if (movie.poster_path) {
-    posterUrl = `${IMAGE_BASE_URL}w500${movie.poster_path}`;
-  }
+  let posterUrl = `${IMAGE_BASE_URL}w500${movie.poster_path}`;
 
-  let relaeaseDate = "N/A";
-  if (movie.release_date) {
-    relaeaseDate = new Date(movie.release_date).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  }
+  let relaeaseDate = new Date(movie.release_date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   card.innerHTML = `
         <img src="${posterUrl}" alt="${movie.title}" class="movie-poster">
