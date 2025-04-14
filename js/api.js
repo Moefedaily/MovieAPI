@@ -13,6 +13,7 @@ function getPopularMovies(callback) {
       return response.json();
     })
     .then(function (data) {
+      console.log("Popular movies:", data);
       callback(null, data);
     })
     .catch(function (error) {
